@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarRatingViewController">
+            <connections>
+                <outlet property="star1" destination="W8I-Y0-0c8" id="Kvq-LS-yW5"/>
+                <outlet property="star2" destination="TrB-j4-99w" id="4Zs-IX-gfd"/>
+                <outlet property="star3" destination="DME-aI-4dd" id="ZRY-KG-Pl1"/>
+                <outlet property="star4" destination="C9i-ED-ycw" id="9VL-ef-oFF"/>
+                <outlet property="star5" destination="HMw-An-ajF" id="Pbn-Dg-ihz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8I-Y0-0c8">
+                    <rect key="frame" x="8" y="8" width="25" height="25"/>
+                    <state key="normal" image="starChecked"/>
+                    <connections>
+                        <action selector="star1Tapped:" destination="-1" eventType="touchUpInside" id="gA2-aE-3VF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrB-j4-99w">
+                    <rect key="frame" x="37" y="8" width="25" height="25"/>
+                    <state key="normal" image="starChecked"/>
+                    <connections>
+                        <action selector="star2Tapped:" destination="-1" eventType="touchUpInside" id="uym-6o-xS9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DME-aI-4dd">
+                    <rect key="frame" x="68" y="8" width="25" height="25"/>
+                    <state key="normal" image="starChecked"/>
+                    <connections>
+                        <action selector="star3Tapped:" destination="-1" eventType="touchUpInside" id="PID-O0-vv0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-ED-ycw">
+                    <rect key="frame" x="99" y="8" width="25" height="25"/>
+                    <state key="normal" image="starChecked"/>
+                    <connections>
+                        <action selector="star4Tapped:" destination="-1" eventType="touchUpInside" id="iL2-Xx-fuK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMw-An-ajF">
+                    <rect key="frame" x="128" y="8" width="25" height="25"/>
+                    <state key="normal" image="starChecked"/>
+                    <connections>
+                        <action selector="star5Tapped:" destination="-1" eventType="touchUpInside" id="7OD-nG-HeN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="167" y="206"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="starChecked" width="512" height="512"/>
+    </resources>
+</document>
