@@ -11,5 +11,11 @@
 @interface StarRatingViewController : UIViewController
 
 + (id)loadController:(Class)classType;
+@property(strong, nonatomic) NSNumber * givenRating;
+@property (strong, nonatomic) IBOutlet UIButton *star1;
+@property (strong, nonatomic) IBOutlet UIButton *star2;
+@property (strong, nonatomic) IBOutlet UIButton *star3;
+@property (strong, nonatomic) IBOutlet UIButton *star4;
+@property (strong, nonatomic) IBOutlet UIButton *star5;
 
 @end

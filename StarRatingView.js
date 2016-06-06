@@ -3,13 +3,23 @@ import { requireNativeComponent } from 'react-native';
 
 
 class StarRatingView extends React.Component {
+
+   constructor(props: {visible: boolean}) {
+    super(props);
+    this.state = { visible: false };
+  }
+
   render() {
-    return <RCTStar/>;
+    return <RCTStar {...this.props}/>;
   }
 }
 
-var RCTStar = requireNativeComponent('DJCStarRating', StarRatingView);
+StarRatingView.propTypes = {
+    visible : React.PropTypes.bool,
+};
 
+//AppRegistry.registerComponent('DJCStarRating', () => StarRatingView);
+var RCTStar = requireNativeComponent('DJCStarRating', StarRatingView);
 module.exports = StarRatingView;
 
 

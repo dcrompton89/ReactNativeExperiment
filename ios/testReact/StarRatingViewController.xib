@@ -22,35 +22,45 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8I-Y0-0c8">
                     <rect key="frame" x="8" y="8" width="25" height="25"/>
-                    <state key="normal" image="starChecked"/>
+                    <state key="normal" image="starUnchecked"/>
+                    <state key="selected" image="starChecked"/>
+                    <state key="highlighted" image="starChecked"/>
                     <connections>
                         <action selector="star1Tapped:" destination="-1" eventType="touchUpInside" id="gA2-aE-3VF"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TrB-j4-99w">
                     <rect key="frame" x="37" y="8" width="25" height="25"/>
-                    <state key="normal" image="starChecked"/>
+                    <state key="normal" image="starUnchecked"/>
+                    <state key="selected" image="starChecked"/>
+                    <state key="highlighted" image="starChecked"/>
                     <connections>
                         <action selector="star2Tapped:" destination="-1" eventType="touchUpInside" id="uym-6o-xS9"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DME-aI-4dd">
                     <rect key="frame" x="68" y="8" width="25" height="25"/>
-                    <state key="normal" image="starChecked"/>
+                    <state key="normal" image="starUnchecked"/>
+                    <state key="selected" image="starChecked"/>
+                    <state key="highlighted" image="starChecked"/>
                     <connections>
                         <action selector="star3Tapped:" destination="-1" eventType="touchUpInside" id="PID-O0-vv0"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-ED-ycw">
                     <rect key="frame" x="99" y="8" width="25" height="25"/>
-                    <state key="normal" image="starChecked"/>
+                    <state key="normal" image="starUnchecked"/>
+                    <state key="selected" image="starChecked"/>
+                    <state key="highlighted" image="starChecked"/>
                     <connections>
                         <action selector="star4Tapped:" destination="-1" eventType="touchUpInside" id="iL2-Xx-fuK"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMw-An-ajF">
                     <rect key="frame" x="128" y="8" width="25" height="25"/>
-                    <state key="normal" image="starChecked"/>
+                    <state key="normal" image="starUnchecked"/>
+                    <state key="selected" image="starChecked"/>
+                    <state key="highlighted" image="starChecked"/>
                     <connections>
                         <action selector="star5Tapped:" destination="-1" eventType="touchUpInside" id="7OD-nG-HeN"/>
                     </connections>
@@ -63,5 +73,6 @@
     </objects>
     <resources>
         <image name="starChecked" width="512" height="512"/>
+        <image name="starUnchecked" width="512" height="512"/>
     </resources>
 </document>

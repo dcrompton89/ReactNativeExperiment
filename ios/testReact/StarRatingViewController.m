@@ -1,3 +1,4 @@
+
 //
 //  StarRatingViewController.m
 //  AwesomeProject
@@ -7,14 +8,11 @@
 //
 
 #import "StarRatingViewController.h"
+#import "Rating.h"
 
 @interface StarRatingViewController ()
 
-@property (strong, nonatomic) IBOutlet UIButton *star1;
-@property (strong, nonatomic) IBOutlet UIButton *star2;
-@property (strong, nonatomic) IBOutlet UIButton *star3;
-@property (strong, nonatomic) IBOutlet UIButton *star4;
-@property (strong, nonatomic) IBOutlet UIButton *star5;
+
 @end
 
 @implementation StarRatingViewController
@@ -36,23 +34,61 @@
 }
 
 - (IBAction)star1Tapped:(id)sender {
-    
+    self.givenRating = [NSNumber numberWithInt:oneStar];
+    [self markStarState:self.givenRating];
 }
 
 - (IBAction)star2Tapped:(id)sender {
-    
+     self.givenRating = [NSNumber numberWithInt:twoStar];
+     [self markStarState:self.givenRating];
 }
 
 - (IBAction)star3Tapped:(id)sender {
-    
+    self.givenRating = [NSNumber numberWithInt:threeStar];
+    [self markStarState:self.givenRating];
 }
 
 - (IBAction)star4Tapped:(id)sender {
-    
+   self.givenRating = [NSNumber numberWithInt:fourStar];
+   [self markStarState:self.givenRating];
 }
 
 - (IBAction)star5Tapped:(id)sender {
-    
+   self.givenRating = [NSNumber numberWithInt:fiveStar];
+   [self markStarState:self.givenRating];
+}
+
+-(void)markStarState:(NSNumber*)rating
+{
+  switch (rating.integerValue) {
+    case oneStar:
+    {
+      [self.star1 setImage:[UIImage imageNamed:@"starChecked.png"] forState:UIControlStateNormal];
+    }
+      break;
+    case twoStar:
+    {
+       [self.star2 setImage:[UIImage imageNamed:@"starChecked.png"] forState:UIControlStateNormal];
+    }
+      break;
+    case threeStar:
+    {
+       [self.star3 setImage:[UIImage imageNamed:@"starChecked.png"] forState:UIControlStateNormal];
+    }
+      break;
+    case fourStar:
+    {
+       [self.star4 setImage:[UIImage imageNamed:@"starChecked.png"] forState:UIControlStateNormal];
+    }
+      break;
+    case fiveStar:
+    {
+       [self.star5 setImage:[UIImage imageNamed:@"starChecked.png"] forState:UIControlStateNormal];
+    }
+      break;
+    default:
+      break;
+  }
 }
 
 
