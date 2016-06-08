@@ -14,8 +14,8 @@ import {
   Text,
   View,
 } from 'react-native';
+import StarController from './StarRatingView.js'
 
-const requireNativeComponent = require('requireNativeComponent');
 
 var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
 
@@ -32,6 +32,7 @@ class AwesomeProject extends Component {
 
   componentDidMount() {
     this.fetchData();
+    console.log('hello log')
   }
 
   fetchData() {
@@ -48,10 +49,13 @@ class AwesomeProject extends Component {
 
   render() {
 
-  const StarController = requireNativeComponent('DJCStarRating');
-
     return(
-    <StarController visible={false}/>
+      <View>
+    <StarController/>
+
+  <Text>hello</Text>
+  </View>
+
     );
   }
 
@@ -93,5 +97,3 @@ var styles = StyleSheet.create({
 
 AppRegistry.registerComponent('testReact', () => AwesomeProject);
 AppRegistry.registerComponent('DJCStarRating', () => require('./StarRatingView'));
-
-

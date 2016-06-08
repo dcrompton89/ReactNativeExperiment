@@ -21,10 +21,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		30034BF61D00478700CBBBAE /* DJCStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 30034BF21D00478700CBBBAE /* DJCStarRating.m */; };
-		30034BF71D00478700CBBBAE /* StarRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30034BF41D00478700CBBBAE /* StarRatingViewController.m */; };
-		30034BF81D00478700CBBBAE /* StarRatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30034BF51D00478700CBBBAE /* StarRatingViewController.xib */; };
-		30C0E84E1D01B3C800547C0F /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0E84D1D01B3C800547C0F /* Rating.m */; };
 		30C0E8671D01D7EF00547C0F /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		30CABB551D06E58000818FC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CABB541D06E58000818FC6 /* Foundation.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
 
@@ -130,11 +128,7 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		30034BF11D00478700CBBBAE /* DJCStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DJCStarRating.h; path = testReact/DJCStarRating.h; sourceTree = "<group>"; };
 		30034BF21D00478700CBBBAE /* DJCStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DJCStarRating.m; path = testReact/DJCStarRating.m; sourceTree = "<group>"; };
-		30034BF31D00478700CBBBAE /* StarRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarRatingViewController.h; path = testReact/StarRatingViewController.h; sourceTree = "<group>"; };
-		30034BF41D00478700CBBBAE /* StarRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StarRatingViewController.m; path = testReact/StarRatingViewController.m; sourceTree = "<group>"; };
-		30034BF51D00478700CBBBAE /* StarRatingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StarRatingViewController.xib; path = testReact/StarRatingViewController.xib; sourceTree = "<group>"; };
-		30C0E84C1D01B3C800547C0F /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
-		30C0E84D1D01B3C800547C0F /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
+		30CABB541D06E58000818FC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30CABB551D06E58000818FC6 /* Foundation.framework in Frameworks */,
 				30C0E8671D01D7EF00547C0F /* libRCTLinking.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
@@ -266,13 +261,8 @@
 		30034BE61D00477000CBBBAE /* StarRating */ = {
 			isa = PBXGroup;
 			children = (
-				30C0E84C1D01B3C800547C0F /* Rating.h */,
-				30C0E84D1D01B3C800547C0F /* Rating.m */,
 				30034BF11D00478700CBBBAE /* DJCStarRating.h */,
 				30034BF21D00478700CBBBAE /* DJCStarRating.m */,
-				30034BF31D00478700CBBBAE /* StarRatingViewController.h */,
-				30034BF41D00478700CBBBAE /* StarRatingViewController.m */,
-				30034BF51D00478700CBBBAE /* StarRatingViewController.xib */,
 			);
 			name = StarRating;
 			sourceTree = "<group>";
@@ -313,6 +303,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				30CABB541D06E58000818FC6 /* Foundation.framework */,
 				13B07FAE1A68108700A75B9A /* testReact */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* testReactTests */,
@@ -532,7 +523,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				30034BF81D00478700CBBBAE /* StarRatingViewController.xib in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,11 +559,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C0E84E1D01B3C800547C0F /* Rating.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				30034BF61D00478700CBBBAE /* DJCStarRating.m in Sources */,
-				30034BF71D00478700CBBBAE /* StarRatingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
